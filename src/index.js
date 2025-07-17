@@ -22,6 +22,6 @@ bot.on('messageCreate', (msg)=>{
         return;
     }
     if(msg.content.toLowerCase() === 'hey'){
-        msg.reply(`Hello ${ msg.author.globalName} ! :P`)
+        msg.reply(`Hello ${ msg.author.globalName} :P`)
     }
 });
