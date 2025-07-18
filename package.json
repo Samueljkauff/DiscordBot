@@ -2,16 +2,26 @@
   "name": "tierlister",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/Samueljkauff/DiscordBot#readme",
+  "bugs": {
+    "url": "https://github.com/Samueljkauff/DiscordBot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samueljkauff/DiscordBot.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "discord.js": "^14.21.0",
-    "dotenv": "^17.2.0"
+    "dotenv": "^17.2.0",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3"
   }
 }
