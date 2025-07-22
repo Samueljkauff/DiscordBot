@@ -18,6 +18,16 @@ const commands = [
             required: true,
         }]
     },
+    {
+        name: 'rate',
+        description: 'Send a Spotify link and rate the album!',
+        options: [{
+            name: 'link',
+            description: 'Spotify Link',
+            type: ApplicationCommandOptionType.String,
+            required: true,
+        }],
+    }
 ];
 
 const rest = new REST({version: '10'}).setToken(process.env.DISCORD_TOKEN);

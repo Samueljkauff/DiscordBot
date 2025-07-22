@@ -29,13 +29,11 @@ bot.on('messageCreate', (msg)=>{
     }
 });
 
-bot.on('interactionCreate', (interaction) => {
-    if(!interaction.isChatInputCommand()) return;
+bot.on('interactionCreate', async (interaction)=>{
+    if (!interaction.isChatInputCommand()) return;
 
-    if(interaction.commandName === 'multiply'){
-        const num1 = interaction.options.get('first-number').value;
-        const num2 = interaction.options.get('second-number').value;
-        const answer = num1 * num2;
-        interaction.reply(`${num1} + ${num2} = ${answer}`)
+    if (interaction.commandName === 'rate') {
+        const link = interaction.options.getString('link');
+        await interaction.reply(`Your link was: ${link}`);
     }
-});
+})
